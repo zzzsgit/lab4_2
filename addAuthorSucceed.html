@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>addAuthorSucceed</title>
+ </head>
+ <body><center>
+ <br />
+ 
+  作者添加成功！
+  <br />
+  <br />
+  
+  <table>
+	<tr>
+		<td><form method="post" action="/addAuthor/">
+  {% csrf_token %}
+	<input type="submit" value="返回">
+</form></td>
+		<td><form method="post" action="/">
+  {% csrf_token %}
+	<input type="submit" value="返回主菜单">
+</form></center></td>
+</tr>
+  </table>
+  </center>
+ </body>
+</html>

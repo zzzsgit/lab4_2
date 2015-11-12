@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>增加书目</title>
+ </head>
+ <body>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <center><h2>增加书目</h2></center>
+ <center><small><small>*为必填项</small></small></center>
+
+ <form method="post" action="/addBookSucceed/">
+ {% csrf_token %}
+ <center>
+<table>
+	<tr>
+	<td>
+ <table border = 2 align = "center">
+  			<tr>
+        			<td><center>ISBN</center></td>
+					<td><center>
+						<input name="ISBN" type = "text" size = "25" >
+					 </center></td>
+  			</tr>
+			<tr>
+        			<td><center>Title</center></td>
+					<td><center>
+						<input name="Title" type = "text" size = "25" >
+					 </center></td>
+  			</tr>
+			<tr>
+        			<td><center>AuthorID</center></td>
+					<td><center>
+						<input name="AuthorID" type = "text" size = "25">
+					 </center></td>
+  			</tr>
+			<tr>
+        			<td><center>Publisher</center></td>
+					<td><center>
+						<input name="Publisher" type = "text" size = "25" >
+					 </center></td>
+  			</tr>
+			<tr>
+        			<td><center>PublishDate</center></td>
+					<td><center>
+						<input name="PublishDate" type = "text" size = "25" >
+					 </center></td>
+  			</tr>
+			<tr>
+        			<td><center>Price</center></td>
+					<td><center>
+						<input name="Price" type = "text" size = "25" >
+					 </center></td>
+  			</tr>
+ </table>
+</td>
+ 
+<td>
+<table>
+  			<tr>
+        			<td>*</td>
+  			</tr>
+			<tr>
+        			<td>*</td>
+  			</tr>
+			<tr>
+        			<td>*</td>
+  			</tr>
+			<tr>
+        			<td><br />
+					</td>
+  			</tr>
+			<tr>
+        			<td><br />
+					</td>
+  			</tr>
+			<tr>
+        			<td> <br />
+					</td>
+  			</tr>
+</table></td>
+
+</tr>
+</table>
+ </center>
+<br/>
+<center>
+<table>
+<tr><td>
+		<input type="submit" value = "提交">
+</td>
+  			
+ </form>
+ <td>
+ 
+<form method="post" action="/">
+	<input type="submit" value = "返回">
+</form>
+</td>
+</tr>
+</table></center>
+ </body>
+</html>
