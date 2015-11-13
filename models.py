@@ -1,5 +1,5 @@
 from django.db import models
-
+"change for B3 r12"
 # Create your models here.
 class Book(models.Model):
     ISBN = models.CharField(primary_key = True,max_length = 70)
